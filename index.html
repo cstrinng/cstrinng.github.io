@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sihyun Cho</title>
+<meta name="description" content="Academic homepage of Sihyun Cho, Ph.D. student at Seoul National University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#222;--muted:#5f6b72;--link:#1772d0;--line:#e5e5e5;--bg:#fff;--accent:#15803d}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--ink:#e6e6e6;--muted:#a8a8a8;--link:#6aaef0;--line:#333;--bg:#141414;--accent:#4ade80}}
+  :root[data-theme="dark"]{--ink:#e6e6e6;--muted:#a8a8a8;--link:#6aaef0;--line:#333;--bg:#141414;--accent:#4ade80}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Helvetica Neue",Inter,"Segoe UI",Roboto,Arial,sans-serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:var(--link);text-decoration:none}
+  a:hover{text-decoration:underline}
+  main{max-width:900px;margin:0 auto;padding:44px 16px 64px}
+  .head{display:grid;grid-template-columns:1fr 220px;gap:32px;align-items:center}
+  .who{text-align:left}
+  .who h1{margin:0 0 6px;font-size:2.2em;font-weight:700;line-height:1.2;color:var(--ink)}
+  .who .position{margin:0;color:var(--muted);line-height:1.7}
+  .who h1,.who .position{text-align:center}
+  .bio{margin:16px 0 0;text-align:left}
+  .links{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:14px;font-size:14.5px}
+  .links a{display:inline-flex;align-items:center;gap:6px;color:var(--link)}
+  .links a:hover{text-decoration:underline}
+  .links svg{width:16px;height:16px;fill:currentColor}
+  .photo{width:220px;aspect-ratio:1;border-radius:50%;background:#e9ecef;display:flex;align-items:center;justify-content:center;color:#8a939b;font-size:13px;overflow:hidden;box-shadow:0 0 0 6px var(--bg),0 0 0 7px var(--line)}
+  .photo img{width:100%;height:100%;object-fit:cover}
+  hr{border:0;border-top:1px solid var(--line);margin:34px 0}
+  h2{font-size:21px;margin:0 0 14px}
+  .note{font-size:13px;color:var(--muted);margin:-6px 0 14px}
+  .pub{display:grid;grid-template-columns:280px 1fr;gap:24px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}
+  .pub:last-child{border-bottom:0}
+  .pub img,.pub video{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:6px;display:block;background:#000}
+  .pub h3{margin:0 0 6px;font-size:16px;font-weight:600;line-height:1.35}
+  .pub .authors{margin:0;font-size:14px}
+  .pub .authors b{font-weight:700;text-decoration:underline;text-underline-offset:2px}
+  .pub .venue{margin:2px 0 4px;font-size:14px;font-style:italic;color:var(--muted)}
+  .pub .plinks{font-size:14px}
+  .pub .plinks a+a:before{content:"|";color:var(--muted);margin:0 8px}
+  footer{margin-top:40px;font-size:12px;color:var(--muted);opacity:.55;text-align:center}
+  @media (max-width:640px){
+    .head{grid-template-columns:1fr;gap:18px}
+    .photo{width:180px;grid-row:1;justify-self:center}
+    .who h1{font-size:28px}
+    .pub{grid-template-columns:1fr;gap:10px}
+    .bio{text-align:left}
+  }
+</style>
+</head>
+<body>
+<main>
+  <section class="head">
+    <div class="who">
+      <h1>Sihyun Cho</h1>
+      <p class="position">
+        Ph.D. Student<br>
+        Interdisciplinary Program in Artificial Intelligence, Seoul National University<br>
+        <a href="https://larr.snu.ac.kr/">Lab for Autonomous Robotics Research</a>
+      </p>
+      <p class="bio">Hi, I'm a Ph.D. student at Seoul National University, advised by <a href="https://aerospace.snu.ac.kr/about/faculty?mode=view&amp;profidx=9">H. Jin Kim</a>. My research interests include generalizable embodied agents, reinforcement learning, and robot safety.</p>
+      <div class="links">
+        <a href="mailto:sihyun01@snu.ac.kr"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5h20v14H2zM3.5 6.5v.3l8.5 6 8.5-6v-.3zm17 2.1-8.5 6-8.5-6V17.5h17z"/></svg>Email</a>
+        <a href="https://scholar.google.com/citations?user=e8SPujIAAAAJ&amp;hl=ko"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14Zm0-24L0 9.5l4.84 3.92A8.96 8.96 0 0 1 12 9.9a8.96 8.96 0 0 1 7.16 3.52L24 9.5 12 0Z"/></svg>Google Scholar</a>
+        <a href="https://github.com/cstrinng"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>GitHub</a>
+      </div>
+    </div>
+    <div class="photo"><img src="img/profile.jpg" alt="Sihyun Cho" width="600" height="600"></div>
+  </section>
+
+
+  <hr>
+
+  <section>
+    <h2>Publications</h2>
+
+    <article class="pub">
+      <a href="https://fly-by-code.github.io/"><video src="media/fly-by-code.mp4" poster="img/fly-by-code.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Fly-by-Code: simulated Cabinet trial"></video></a>
+      <div>
+        <h3>Fly-by-Code: Embodied Coding Agents for Aerial Manipulation with Active Visual and Physical Feedback</h3>
+        <p class="authors">J. Lee*, J. Seo*, <b>S. Cho</b>*, G. Choe, Y. Wang, B. Saravanan, J.-B. Huang, F. Huang, S. Scherer, G. Shi, H. J. Kim, S. Lee, D. Lee</p>
+        <p class="venue">Preprint, 2026</p>
+        <p class="plinks"><a href="https://fly-by-code.github.io/">Website</a></p>
+      </div>
+    </article>
+
+    <article class="pub">
+      <a href="https://eigen-safe.github.io/"><video src="media/eigensafe.mp4" poster="img/eigensafe.jpg" autoplay muted loop playsinline preload="metadata" aria-label="EigenSafe: robot arm with live eigenfunction value"></video></a>
+      <div>
+        <h3>EigenSafe: A Spectral Framework for Learning-Based Probabilistic Safety Assessment</h3>
+        <p class="authors">I. Jang*, J. Park*, <b>S. Cho</b>, C. E. Mballo, C. J. Tomlin, H. J. Kim</p>
+        <p class="venue">Robotics: Science and Systems (RSS), 2026</p>
+        <p class="plinks"><a href="https://arxiv.org/abs/2509.17750">Paper</a><a href="https://eigen-safe.github.io/">Website</a><a href="https://github.com/jonghaepark/eigensafe">Code</a></p>
+      </div>
+    </article>
+  </section>
+
+  <footer>Last updated: October 2026</footer>
+</main>
+</body>
+</html>
