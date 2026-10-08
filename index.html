@@ -13,39 +13,47 @@
   @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--ink:#e6e6e6;--muted:#a8a8a8;--link:#6aaef0;--line:#333;--bg:#141414;--accent:#4ade80}}
   :root[data-theme="dark"]{--ink:#e6e6e6;--muted:#a8a8a8;--link:#6aaef0;--line:#333;--bg:#141414;--accent:#4ade80}
   *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Helvetica Neue",Inter,"Segoe UI",Roboto,Arial,sans-serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Helvetica Neue",Inter,"Segoe UI",Roboto,Arial,sans-serif;font-size:20px;line-height:1.6;-webkit-font-smoothing:antialiased}
   a{color:var(--link);text-decoration:none}
   a:hover{text-decoration:underline}
-  main{max-width:900px;margin:0 auto;padding:44px 16px 64px}
+  main{max-width:1060px;margin:0 auto;padding:44px 16px 64px}
   .head{display:grid;grid-template-columns:1fr 220px;gap:32px;align-items:center}
   .who{text-align:left}
   .who h1{margin:0 0 6px;font-size:2.2em;font-weight:700;line-height:1.2;color:var(--ink)}
   .who .position{margin:0;color:var(--muted);line-height:1.7}
   .who h1,.who .position{text-align:center}
   .bio{margin:16px 0 0;text-align:left}
-  .links{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:14px;font-size:14.5px}
+  .links{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:14px;font-size:19.3px}
   .links a{display:inline-flex;align-items:center;gap:6px;color:var(--link)}
   .links a:hover{text-decoration:underline}
   .links svg{width:16px;height:16px;fill:currentColor}
-  .photo{width:220px;aspect-ratio:1;border-radius:50%;background:#e9ecef;display:flex;align-items:center;justify-content:center;color:#8a939b;font-size:13px;overflow:hidden;box-shadow:0 0 0 6px var(--bg),0 0 0 7px var(--line)}
+  .photo{width:220px;aspect-ratio:1;border-radius:50%;background:#e9ecef;display:flex;align-items:center;justify-content:center;color:#8a939b;font-size:17.3px;overflow:hidden;box-shadow:0 0 0 6px var(--bg),0 0 0 7px var(--line)}
   .photo img{width:100%;height:100%;object-fit:cover}
   hr{border:0;border-top:1px solid var(--line);margin:34px 0}
-  h2{font-size:21px;margin:0 0 14px}
-  .note{font-size:13px;color:var(--muted);margin:-6px 0 14px}
+  h2{font-size:28px;margin:0 0 14px}
+  .note{font-size:17.3px;color:var(--muted);margin:-6px 0 14px}
   .pub{display:grid;grid-template-columns:280px 1fr;gap:24px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}
   .pub:last-child{border-bottom:0}
   .pub img,.pub video{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:6px;display:block;background:#000}
-  .pub h3{margin:0 0 6px;font-size:16px;font-weight:600;line-height:1.35}
-  .pub .authors{margin:0;font-size:14px}
+  .pub h3{margin:0 0 6px;font-size:21.3px;font-weight:600;line-height:1.35}
+  .pub .authors{margin:0;font-size:18.7px}
   .pub .authors b{font-weight:700;text-decoration:underline;text-underline-offset:2px}
-  .pub .venue{margin:2px 0 4px;font-size:14px;font-style:italic;color:var(--muted)}
-  .pub .plinks{font-size:14px}
+  .pub .venue{margin:2px 0 4px;font-size:18.7px;font-style:italic;color:var(--muted)}
+  .pub .plinks{font-size:18.7px}
   .pub .plinks a+a:before{content:"|";color:var(--muted);margin:0 8px}
-  footer{margin-top:40px;font-size:12px;color:var(--muted);opacity:.55;text-align:center}
+  .edu{display:grid;grid-template-columns:64px 1fr;gap:20px;align-items:center;padding:12px 0}
+  .edu img{width:64px;height:64px;object-fit:contain}
+  .edu p{margin:0}
+  .edu-row{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+  .edu-title{font-weight:600}
+  .edu-date{color:var(--muted);font-size:17px;white-space:nowrap}
+  .edu-org{color:var(--ink)}
+  .edu-meta{color:var(--muted);font-size:17px}
+  footer{margin-top:40px;font-size:16px;color:var(--muted);opacity:.55;text-align:center}
   @media (max-width:640px){
     .head{grid-template-columns:1fr;gap:18px}
     .photo{width:180px;grid-row:1;justify-self:center}
-    .who h1{font-size:28px}
+    .who h1{font-size:37.3px}
     .pub{grid-template-columns:1fr;gap:10px}
     .bio{text-align:left}
   }
@@ -96,6 +104,26 @@
         <p class="plinks"><a href="https://arxiv.org/abs/2509.17750">Paper</a><a href="https://eigen-safe.github.io/">Website</a><a href="https://github.com/jonghaepark/eigensafe">Code</a></p>
       </div>
     </article>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>Education</h2>
+    <div class="edu">
+      <img src="img/snu.png" alt="Seoul National University emblem" width="160" height="160">
+      <div>
+        <p class="edu-row"><span class="edu-title">Integrated M.S./Ph.D. Program in Artificial Intelligence</span><span class="edu-date">Mar. 2025 &ndash; Present</span></p>
+        <p class="edu-org">Seoul National University</p>
+      </div>
+    </div>
+    <div class="edu">
+      <img src="img/yonsei.png" alt="Yonsei University emblem" width="160" height="160">
+      <div>
+        <p class="edu-row"><span class="edu-title">B.S. in Mechanical Engineering</span><span class="edu-date">Mar. 2020 &ndash; Aug. 2024</span></p>
+        <p class="edu-org">Yonsei University</p>
+      </div>
+    </div>
   </section>
 
   <footer>Last updated: October 2026</footer>
